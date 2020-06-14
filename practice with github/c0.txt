@@ -1,0 +1,50 @@
+1. Git Commits
+
+git commit;
+git commit;
+
+2. Branching 
+
+git branch bugFix;
+git checkout bugFix;
+
+3 Merging 
+
+git checkout -b bugFix;
+git commit;
+git checkout master;
+git commit;
+git merge bugFix;
+
+4. Rebase 
+
+git checkout -b bugFix;
+git commit;
+git checkout master;
+git commit;
+git checkout bugFix;
+git rebase master;
+
+5. Detach HEAD
+
+git checkout C4;
+
+6. Relative refs1 
+
+git checkout C4^;
+
+7. Relative refs2
+git branch -f master C6;
+git branch -f bugFix C0;
+git checkout C1;
+
+8.  Reversing 
+git reset local~1;
+git checkout pushed;
+git revert pushed;
+
+9. Cherry-pick 
+git cherry-pick C3 C4 C7;
+
+10.  Rebase 
+git rebase -i master~4 --aboveAll;
